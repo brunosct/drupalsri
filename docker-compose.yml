@@ -9,6 +9,7 @@ services:
       - 443:443
     volumes:
       - ./apache/drupal.conf:/etc/apache2/sites-enabled/drupal.conf
+      - ./apache/drupaloracle.conf:/etc/apache2/sites-enabled/drupaloracle.conf
       - ./html:/html
       - ./apache/certificados:/certificados
   basedatos:
